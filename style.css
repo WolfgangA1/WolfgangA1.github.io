@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:century, sans-serif,'Times New Roman', Times, serif;
 }
 
 html {
@@ -11,7 +12,7 @@ html {
 /* Navbar*/
 .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: center,;
     align-items: center;
     background-color: #888;
     position: sticky;
@@ -78,7 +79,7 @@ html {
 }
 
 .headings {
-    font-family: century;
+    font-family: century, sans-serif,'Times New Roman', Times, serif;
     font-size: 3rem;
     text-align: center;
     margin: 40px 0;
@@ -108,14 +109,13 @@ html {
 #picture img{
     width: 575px;
     height: 400px;
+    padding: 5px;
+    margin-top: 5px;
 }
-
-#picture
 
 #intro {
     display: flex;
-    flex-direction: column;
-    text-align: justify;
+    flex-direction: column; 
     padding: 10px;
 }
 
@@ -216,10 +216,14 @@ html {
 }
 
 @media only screen and (max-width: 767px){
-    .home {
+    #home {
         align-items: center;
         display: flex;
         flex-direction: column;
+    }
+
+    .headings {
+        font-size: 1.7rem;
     }
 
     .navbar ul {
@@ -230,17 +234,18 @@ html {
         justify-content: center;
     }
 
-    #intro p {
-        margin: 10px;
-        display: flex;
-        flex-wrap: wrap;
+    #intro h2 {
+        font-size: 1.5rem;
+    }
+
+    #picture {
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
     }
 
     #picture img {
-        width: 300px;
-        height: 175px;
+        width: 250px;
+        height: 275px;
     }
 
     .projects {
